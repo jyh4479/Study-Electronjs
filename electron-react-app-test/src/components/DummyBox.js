@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const DummyBox = () => {
     const TestBox = styled.div`
-    background-color:skyblue;
+    background-color:white;
     width:100%;
     height:315px;
     `
