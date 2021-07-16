@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow,screen } = require('electron')
 const url = require('url')
 const path = require('path')
 
@@ -6,13 +6,20 @@ function createWindow () {
     // 브라우저 창을 생성합니다.
     const win = new BrowserWindow({
         width: 360,
-        height: 568,
+        // height: 568,
         webPreferences: {
             nodeIntegration: true
         },
-        resizable:false
+        backgroundColor : '#ffffff',
+        resizable : false,
+        // minimizable : false,
+        frame : false,
+        autoHideMenuBar : true
     })
-    win.setMenu(null);
+
+    // 메뉴 제거
+    win.setMenu(null) // null을 설정하면 메뉴를 제거함
+    win.webContents.openDevTools()
 
     // React를 빌드할 경우 결과물은 build 폴더에 생성되기 때문에 loadURL 부분을 아래와 같이 작성합니다.
     const startUrl = process.env.ELECTRON_START_URL || url.format({

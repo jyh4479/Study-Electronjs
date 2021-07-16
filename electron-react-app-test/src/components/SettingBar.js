@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const SettingBar = () => {
     const MyBox = styled.div`
-    background-color: black;
+    background-color: white;
     height:40px;
     bottom:100%;
     `
