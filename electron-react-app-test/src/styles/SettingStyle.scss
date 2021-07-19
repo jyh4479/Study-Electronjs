@@ -22,6 +22,8 @@ $sides: ('top', 'right', 'bottom', 'left');
 }
 
 .setting-img {
+  transition: filter 0.3s;
+
   &:active {
     filter: brightness(50%);
   }
