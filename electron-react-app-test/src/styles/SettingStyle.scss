@@ -1,3 +1,10 @@
+@for $i from 0 through 100 {
+  $marginTop: 1px * $i;
+  .m-top-#{$i} {
+    margin-top: $marginTop;
+  }
+}
+
 .setting-box {
   display:flex;
   justify-content: center;
