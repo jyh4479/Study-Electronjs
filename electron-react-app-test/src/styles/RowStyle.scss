@@ -1,14 +1,13 @@
+$sides: ('top', 'right', 'bottom', 'left');
+
 @mixin line-class($side, $size) {
-  .l-#{$side}-#{$size}{
-    border-#{$side}:#{$size}px solid #e5e5e5;
+  .l-#{$side}-#{$size} {
+    border-#{$side}: #{$size}px solid #e5e5e5;
   }
 }
 
-
-$sides:('top', 'right', 'bottom', 'left');
-
-@mixin generate-line(){
-  @each $side in $sides{
+@mixin generate-line() {
+  @each $side in $sides {
     @for $size from 0 through 50 {
       @include line-class($side, $size);
     }

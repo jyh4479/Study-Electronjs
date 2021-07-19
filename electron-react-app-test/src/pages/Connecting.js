@@ -4,7 +4,6 @@ import {InfoBox, Row, SettingButton, SettingButtonBox, TopMenu} from '../compone
 const Connecting = () => {
     return (
         <div>
-
             <Row>
                 <TopMenu></TopMenu>
             </Row>
@@ -14,15 +13,19 @@ const Connecting = () => {
             </Row>
 
             <Row lineTop={1}>
-                <SettingButtonBox marginTop={20}>
+                <SettingButtonBox marginTop={15}>
                     <SettingButton imagePath={'/mike.png'} text={'음소거'}/>
                     <SettingButton imagePath={'/phone.png'} text={'통화보류'}/>
                     <SettingButton imagePath={'/keyboard.png'} text={'키패드'}/>
                 </SettingButtonBox>
 
-                <SettingButtonBox marginTop={20}>
+                <SettingButtonBox marginTop={15} marginBottom={15}>
                     <SettingButton imagePath={'/calloff.png'}/>
                 </SettingButtonBox>
+            </Row>
+
+            <Row lineTop={1}>
+
             </Row>
         </div>
     )
