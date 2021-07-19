@@ -1,5 +1,5 @@
 import './App.css';
-import { TopMenu, HorizontalBar, InfoBox, CallOffButton, DummyBox, TestButton, SettingBar } from './components'
+import {Connecting} from "./pages";
 import styled from "styled-components";
 
 function App() {
@@ -21,26 +21,27 @@ margin-top: 15px;
 
     return (
         <div className="App">
-            <TopMenu></TopMenu>
-            <HorizontalBar></HorizontalBar>
-            <InfoBox></InfoBox>
-            <HorizontalBar></HorizontalBar>
+            {/*<TopMenu></TopMenu>*/}
+            {/*<HorizontalBar></HorizontalBar>*/}
+            {/*<InfoBox></InfoBox>*/}
+            {/*<HorizontalBar></HorizontalBar>*/}
 
-            <ButtonWrapper>
-                <ButtonBox>
-                    <TestButton imagePath={'/mike.png'} text={'음소거'}/>
-                    <TestButton imagePath={'/phone.png'} text={'통화보류'}/>
-                    <TestButton imagePath={'/keyboard.png'} text={'키패드'}/>
-                </ButtonBox>
-            </ButtonWrapper>
+            {/*<ButtonWrapper>*/}
+            {/*    <ButtonBox>*/}
+            {/*        <SettingButton imagePath={'/mike.png'} text={'음소거'}/>*/}
+            {/*        <SettingButton imagePath={'/phone.png'} text={'통화보류'}/>*/}
+            {/*        <SettingButton imagePath={'/keyboard.png'} text={'키패드'}/>*/}
+            {/*    </ButtonBox>*/}
+            {/*</ButtonWrapper>*/}
 
-            <ButtonBox>
-                <CallOffButton/>
-            </ButtonBox>
+            {/*<ButtonBox>*/}
+            {/*    <CallOffButton/>*/}
+            {/*</ButtonBox>*/}
 
-            <ButtonWrapper marginTop='20px'>
-                <SettingBar/>
-            </ButtonWrapper>
+            {/*<ButtonWrapper marginTop='20px'>*/}
+            {/*    <SettingBar/>*/}
+            {/*</ButtonWrapper>*/}
+            <Connecting></Connecting>
         </div>
     );
 }
