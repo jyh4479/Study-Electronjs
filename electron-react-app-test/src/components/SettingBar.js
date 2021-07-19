@@ -7,7 +7,7 @@ const SettingBar = () => {
     height:40px;
     bottom:100%;
     `
-    return(
+    return (
         <MyBox/>
     )
 }

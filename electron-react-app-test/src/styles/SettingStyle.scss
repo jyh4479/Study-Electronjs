@@ -1,6 +1,6 @@
-@for $i from 0 through 100 {
-  $marginTop: 1px * $i;
-  .m-top-#{$i} {
+@for $size from 0 through 100 {
+  $marginTop: 1px * $size;
+  .m-top-#{$size} {
     margin-top: $marginTop;
   }
 }
@@ -15,9 +15,11 @@
   background-color: white;
   border: 0;
   outline: 0;
+}
 
+.setting-img {
   &:active {
-    background-color: #BBBBBB;
+    filter:brightness(50%);
   }
 }
 

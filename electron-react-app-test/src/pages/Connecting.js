@@ -1,8 +1,8 @@
 import React from 'react'
-import { SettingButtonBox, TopMenu, InfoBox, SettingButton, SettingBar, Row } from '../components'
+import {InfoBox, Row, SettingButton, SettingButtonBox, TopMenu} from '../components'
 
-const Connecting = () =>{
-    return(
+const Connecting = () => {
+    return (
         <div>
 
             <Row>
@@ -28,8 +28,6 @@ const Connecting = () =>{
     )
 }
 
-Connecting.defaultProps = {
-
-}
+Connecting.defaultProps = {}
 
 export default Connecting

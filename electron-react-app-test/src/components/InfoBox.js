@@ -3,16 +3,16 @@ import '../styles/InfoBox.scss'
 
 /**
  * InfoBox Component
- * 
+ *
  * @props
- * - 
- * 
- * @returns 
+ * -
+ *
+ * @returns
  */
 
 const InfoBox = () => {
 
-    return(
+    return (
         <div className="info-wrapper">
             <div className="info-number">010-123-4567</div>
             <div className="conn-state">연결중...</div>
@@ -31,8 +31,6 @@ const InfoBox = () => {
     )
 }
 
-InfoBox.defaultProps = {
-
-}
+InfoBox.defaultProps = {}
 
 export default InfoBox
