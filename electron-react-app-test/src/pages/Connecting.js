@@ -14,9 +14,9 @@ const Connecting = () => {
 
             <Row lineTop={1}>
                 <SettingButtonWrapper marginTop={15}>
-                    <SettingButton imagePath={'/mike.png'} text={'음소거'}/>
-                    <SettingButton imagePath={'/phone.png'} text={'통화보류'}/>
-                    <SettingButton imagePath={'/keyboard.png'} text={'키패드'}/>
+                    <SettingButton marginRight={15} marginLeft={15} imagePath={'/mike.png'} text={'음소거'}/>
+                    <SettingButton marginRight={15} marginLeft={15} imagePath={'/phone.png'} text={'통화보류'}/>
+                    <SettingButton marginRight={15} marginLeft={15} imagePath={'/keyboard.png'} text={'키패드'}/>
                 </SettingButtonWrapper>
 
                 <SettingButtonWrapper marginTop={15} marginBottom={15}>

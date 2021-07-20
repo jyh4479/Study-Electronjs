@@ -1,14 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
+import '../styles/SettingStyle.scss'
+
 
 const SettingBar = () => {
-    const MyBox = styled.div`
-    background-color: white;
-    height:40px;
-    bottom:100%;
-    `
     return (
-        <input type="range" min="1" max="100" value="5" id="myNumber"/>
+        <input type="range" min="0" max="100" className="slider" id="myRange"/>
     )
 }
 export default SettingBar
