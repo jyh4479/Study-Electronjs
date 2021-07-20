@@ -8,7 +8,7 @@ const SettingBar = () => {
     bottom:100%;
     `
     return (
-        <MyBox/>
+        <input type="range" min="1" max="100" value="5" id="myNumber"/>
     )
 }
 export default SettingBar
