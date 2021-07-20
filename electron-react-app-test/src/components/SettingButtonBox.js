@@ -3,8 +3,12 @@ import {SettingBar, SettingButton} from "./index";
 
 const SettingButtonBox = props => {
     return (
-        <div className={'setting-box'}>
-            <SettingButton marginTop={props.marginTop} imagePath={props.imagePath}></SettingButton>
+        <div className={`setting-box 
+        m-top-${props.marginTop}
+        m-left-${props.marginLeft}
+        m-right-${props.marginRight}
+        m-bottom-${props.marginBottom}`}>
+            <SettingButton marginTop={props.iconMarginTop} imagePath={props.imagePath}></SettingButton>
             <SettingBar></SettingBar>
         </div>
     )
@@ -12,7 +16,11 @@ const SettingButtonBox = props => {
 
 SettingButtonBox.defaultProps = {
     imagePath: '',
+    iconMarginTop: 0,
     marginTop: 0,
+    marginLeft: 0,
+    marginRight: 0,
+    marginBottom: 0,
 }
 
 export default SettingButtonBox
