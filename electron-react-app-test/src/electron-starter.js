@@ -1,8 +1,8 @@
-const { app, BrowserWindow,screen } = require('electron')
+const {app, BrowserWindow, screen} = require('electron')
 const url = require('url')
 const path = require('path')
 
-function createWindow () {
+function createWindow() {
     // 브라우저 창을 생성합니다.
     const win = new BrowserWindow({
         width: 360,
@@ -10,11 +10,16 @@ function createWindow () {
         webPreferences: {
             nodeIntegration: true
         },
-        backgroundColor : '#ffffff',
-        resizable : false,
+        backgroundColor: '#ffffff',
+        resizable: false,
         // minimizable : false,
-        frame : false,
-        autoHideMenuBar : true
+        frame: true,
+        autoHideMenuBar: true,
+        show: false,
+    })
+
+    win.once('ready-to-show',()=>{
+        win.show()
     })
 
     // 메뉴 제거

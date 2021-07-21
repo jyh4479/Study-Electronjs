@@ -1,0 +1,149 @@
+
+.noDrag {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select:none;
+}
+
+.keypadArea {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  //padding: 15px 30px;
+  border-bottom: solid 1px lightgray;
+  border-top: solid 1px lightgray;
+}
+//
+//.numericInput {
+//  position: relative;
+//}
+//
+//.keypad {
+//  $w: 100%;
+//  $h: 180px;
+//  width: $w;
+//  height: $h;
+//  tbody tr td {
+//    text-align: center;
+//    font-weight: bold;
+//    color: black;
+//    width: 100px;
+//    font-weight: 100;
+//    font-size:25px;
+//    border-radius: 30px;
+//    cursor: pointer;
+//    border: solid 0.5px lightgray;
+//    &:hover {
+//      background-color: lightgrey;
+//    }
+//    &:active{
+//      background-color: white;
+//    }
+//  }
+//  @at-root .keypad2 {
+//    width: $w;
+//    height: 50px;
+//    tbody tr td {
+//      background-color: #e4b58d;
+//      text-align: center;
+//      color: black;
+//      width: 100px;
+//      border-radius: 30px;
+//      cursor: pointer;
+//
+//      &:hover {
+//        background-color: lightgrey;
+//      }
+//
+//      &:active {
+//        background-color: white;
+//      }
+//
+//    }
+//  }
+//}
+//
+//.btn {
+//  border: solid 1px black;
+//  text-align: center;
+//  font-weight: bold;
+//  color: black;
+//  cursor: pointer;
+//  background-color: DimGray;
+//  width: 33.3%;
+//}
+//
+//.btn:hover {
+//  background-color: DarkGray;
+//}
+//
+//.btn:active {
+//  background-color: LightGray;
+//}
+
+
+
+.container {
+  width: 90vw;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+
+.row a {
+  -webkit-user-drag: none;
+  display: inline-block;
+  border: 1px solid #333;
+  border-radius: 47px;
+  text-align: center;
+  width: 20vw;
+  height: 12vw;
+  line-height: 12vw;
+  margin: 2%;
+  font-size: 6vw;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease-in-out;
+
+  &:active, &:hover {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 1);
+  }
+}
+
+.callIcon{
+  //background-image: url('../icons/call.svg');
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  height: 24px;
+  width: 24px;
+  display: inline-table;
+}
+
+.row .call {
+  background:green;
+  color:#fff;
+  //width:20vw;
+  //margin:6%;
+}
+
+.row .remove {
+  color: #0e0b0b;
+  //width: 20vw;
+  //margin: 6%;
+  border: none;
+  border-radius: inherit;
+  &:active, &:hover {
+    box-shadow: none;
+  }
+}
+
+.row .empty {
+  color: white;
+  cursor: auto;
+  border: none;
+  &:active, &:hover {
+    box-shadow: none;
+  }
+}
+
