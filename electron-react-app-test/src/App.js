@@ -1,10 +1,11 @@
 import './App.css';
-import {Connecting} from "./pages";
+import {Home, Connecting} from "./pages";
 
 function App() {
     return (
         <div className="App">
-            <Connecting></Connecting>
+            <Home></Home>
+            {/*<Connecting></Connecting>*/}
         </div>
     );
 }
