@@ -8,7 +8,7 @@ const SettingButtonBox = props => {
         m-left-${props.marginLeft}
         m-right-${props.marginRight}
         m-bottom-${props.marginBottom}`}>
-            <SettingButton marginTop={props.iconMarginTop} imagePath={props.imagePath}></SettingButton>
+            <SettingButton imagePath={props.imagePath}></SettingButton>
             <SettingBar></SettingBar>
         </div>
     )
@@ -16,7 +16,6 @@ const SettingButtonBox = props => {
 
 SettingButtonBox.defaultProps = {
     imagePath: '',
-    iconMarginTop: 0,
     marginTop: 0,
     marginLeft: 0,
     marginRight: 0,

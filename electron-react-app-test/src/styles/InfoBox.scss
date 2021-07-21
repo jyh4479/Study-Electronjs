@@ -1,69 +1,69 @@
 .info-wrapper {
 
-    font-family: MalgunGothic;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    text-align: center;
-    color : #666666;
+  font-family: MalgunGothic;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: center;
+  color: #666666;
 
-    .info-number{
-        width: 102px;
-        height: 24px;
-        margin: 32px 129px 2px;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: normal;
-        color: #333333;
-    }
+  .info-number {
+    width: 102px;
+    height: 24px;
+    margin: 32px 129px 2px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #333333;
+  }
 
-    .conn-state{
-        width: 58px;
-        height: 24px;
-        margin: 2px 151.5px 24px 150.5px;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: -0.5px;
-        color: #3a6af6;
-    }
+  .conn-state {
+    width: 58px;
+    height: 24px;
+    margin: 2px 151.5px 24px 150.5px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+    color: #3a6af6;
+  }
 
-    .info-img{
-        width: 80px;
-        height: 80px;
-        margin: 0 52px 8px;
-        object-fit: contain;
-    }
+  .info-img {
+    width: 80px;
+    height: 80px;
+    margin: 0 52px 8px;
+    object-fit: contain;
+  }
 
-    .info-name{
-        width: 184px;
-        height: 28px;
-        margin: 8px auto;
-        font-size: 20px;
-        line-height: 1.4;
-        letter-spacing: -1px;
-    }
+  .info-name {
+    width: 184px;
+    height: 28px;
+    margin: 8px auto;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -1px;
+  }
 
-    .info-team{
-        width: 74px;
-        height: 18px;
-        margin: 8px auto 2px;
-        font-size: 13px;
-        line-height: 1.38;
-        letter-spacing: -0.5px;
-    }
+  .info-team {
+    width: 74px;
+    height: 18px;
+    margin: 8px auto 2px;
+    font-size: 13px;
+    line-height: 1.38;
+    letter-spacing: -0.5px;
+  }
 
-    .info-name-bold{
-        font-weight: bold;
-        color: #333333;
-    }
+  .info-name-bold {
+    font-weight: bold;
+    color: #333333;
+  }
 
-    .info-comp{
-        width: 75px;
-        height: 18px;
-        margin: 2px auto 45px;
-        font-size: 13px;
-        line-height: 1.38;
-        letter-spacing: -0.5px;
-    }
+  .info-comp {
+    width: 75px;
+    height: 18px;
+    margin: 2px auto 45px;
+    font-size: 13px;
+    line-height: 1.38;
+    letter-spacing: -0.5px;
+  }
 
 }

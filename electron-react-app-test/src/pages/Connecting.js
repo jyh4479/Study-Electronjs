@@ -25,9 +25,9 @@ const Connecting = () => {
             </Row>
 
             <Row lineTop={1}>
-                <SettingButtonWrapper marginTop={5}>
-                    <SettingButtonBox marginRight={10} iconMarginTop={3} imagePath={'/volume.png'}></SettingButtonBox>
-                    <SettingButtonBox marginLeft={10} iconMarginTop={3} imagePath={'/bmike.png'}></SettingButtonBox>
+                <SettingButtonWrapper marginTop={15}>
+                    <SettingButtonBox marginRight={10} imagePath={'/volume.png'}></SettingButtonBox>
+                    <SettingButtonBox marginLeft={10} imagePath={'/bmike.png'}></SettingButtonBox>
                 </SettingButtonWrapper>
             </Row>
         </div>

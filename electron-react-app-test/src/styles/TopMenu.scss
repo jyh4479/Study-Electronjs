@@ -1,39 +1,38 @@
-.top-menu-wrapper{
-    width: 360px;
-    height: 36px;
-    // margin: 0 0 32px;
-    padding: 6px 12px;
-    box-sizing: border-box;
-    -webkit-app-region : drag;
+.top-menu-wrapper {
+  width: 360px;
+  height: 36px;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  -webkit-app-region: drag;
 }
 
-.call-img{
-    width: 24px;
-    height: 24px;
-    margin: 0 2px 0 0;
-    object-fit: contain;
-    vertical-align: middle;
+.call-img {
+  width: 24px;
+  height: 24px;
+  margin: 0 2px 0 0;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
-.controller-img{
-    width: 70px;
-    height: 16px;
-    margin: 0px 0px 0px 106px;
-    object-fit: contain;
-    vertical-align: middle;
+.controller-img {
+  width: 70px;
+  height: 16px;
+  margin: 0px 0px 0px 106px;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
-.top-menu-name{
-    width: 130px;
-    height: 18px;
-    margin: 2px 0 4px 2px;
-    font-family: MalgunGothic;
-    font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.38;
-    letter-spacing: -0.5px;
-    color: #333333;
-    vertical-align: middle;
+.top-menu-name {
+  width: 130px;
+  height: 18px;
+  margin: 2px 0 4px 2px;
+  font-family: MalgunGothic;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: -0.5px;
+  color: #333333;
+  vertical-align: middle;
 }
