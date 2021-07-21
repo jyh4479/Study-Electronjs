@@ -69,37 +69,37 @@ const KeyPad = Props => {
         }}
       />
       {/*<div className={`${styles.keypadArea} ${styles.noDrag}`}>*/}
-      <div className={[styles.keypadArea, styles.noDrag].join(' ')}>
-        <div className={[styles.container].join('')}>
-          <div className={[styles.row].join('')}>
+      <div className={'keypadArea styles'}>
+        <div className={'container'}>
+          <div className={'row'}>
             <a onClick={onClick}>1</a>
             <a onClick={onClick}>2</a>
             <a onClick={onClick}>3</a>
           </div>
-          <div className={[styles.row].join('')}>
+          <div className={'row'}>
             <a onClick={onClick}>4</a>
             <a onClick={onClick}>5</a>
             <a onClick={onClick}>6</a>
           </div>
-          <div className={[styles.row].join('')}>
+          <div className={'row'}>
             <a onClick={onClick}>7</a>
             <a onClick={onClick}>8</a>
             <a onClick={onClick}>9</a>
           </div>
-          <div className={[styles.row].join('')}>
+          <div className={'row'}>
             <a onClick={onClick}>*</a>
             <a onClick={onClick}>0</a>
             <a onClick={onClick}>#</a>
           </div>
           {Props.btnFlag ? (
-            <div className={[styles.row].join('')}>
-              <a className={[styles.empty].join('')}>
+            <div className={'row'}>
+              <a className={'empty'}>
                 <i className="fa fa-times" />
               </a>
-              <a onClick={onClick2} className={[styles.call].join('')}>
+              <a onClick={onClick2} className={'call'}>
                 <i className="fa fa-phone" />
               </a>
-              <a onClick={onClick3} className={[styles.remove].join('')}>
+              <a onClick={onClick3} className={'remove'}>
                 <i className="fa fa-window-close" />
               </a>
             </div>
