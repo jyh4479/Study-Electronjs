@@ -125,13 +125,19 @@
   .call-on {
     background: green;
     border: 0px;
-    color:white;
+    color: white;
   }
 
   .call-off {
     background: red;
     border: 0px;
-    color:white;
+    color: white;
+  }
+
+  .rotate-225 {
+    transform: rotate(
+                    225deg
+    );
   }
 
   //width:20vw;

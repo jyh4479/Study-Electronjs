@@ -25,6 +25,7 @@ const KeyPad = Props => {
         // voipControl.voipDialUp(number);
     };
     const callOffEvent = e => {
+        e.preventDefault();
         console.log('Call off!')
     }
 
@@ -47,6 +48,7 @@ const KeyPad = Props => {
             .replace('--', '-');
     };
 
+    /* --- KeyPad View --- */
     const keyPadNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, '*', 0, '#']
     const padCount = 3
     const padView = []
@@ -61,13 +63,12 @@ const KeyPad = Props => {
 
     const makePadView = () => {
         for (let i = 0; i < keyPadNumber.length / padCount; i++)
-        padView.push(
-            <div className={'row'}>
-                {makePadItem(i)}
-            </div>
-        )
+            padView.push(
+                <div className={'row'}>
+                    {makePadItem(i)}
+                </div>
+            )
     }
-
     makePadView()
 
     return (
@@ -98,7 +99,7 @@ const KeyPad = Props => {
                 <div className={'container'}>
                     {padView}
                     <div className={'row'}>
-                        <CallButtonBox pageType={'a'} callOnEvent={callOnEvent}
+                        <CallButtonBox pageType={'c'} callOnEvent={callOnEvent}
                                        callOffEvent={callOffEvent}></CallButtonBox>
                     </div>
                 </div>
