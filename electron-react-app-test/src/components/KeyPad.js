@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {CallButtonBox} from "./index";
+import {CallButtonBox, KeyButton} from "./index";
 // import voipControl from '../../utils/voipHandler';
 
 const KeyPad = Props => {
@@ -55,8 +55,9 @@ const KeyPad = Props => {
 
     const makePadItem = num => {
         const view = []
-        for (let i = num * 3; i < num * 3 + padCount; i++) {
-            view.push(<a onClick={onClick}>{keyPadNumber[i]}</a>)
+        const start = num * 3
+        for (let i = start; i < start + padCount; i++) {
+            view.push(<KeyButton keyFunction={onClick} keyNumber={keyPadNumber[i]}/>)
         }
         return view
     }
@@ -73,37 +74,37 @@ const KeyPad = Props => {
 
     return (
         <div>
-      <textarea
-          onChange={onChange}
-          value={viewNumber(number)}
-          maxLength="19"
-          style={{
-              color: 'black',
-              height: '70px',
-              fontSize: '24px',
-              padding: '40px 0 10px 0',
-              fontWeight: 'bold',
-              textAlign: 'center',
-              whiteSpace: 'pre-line',
-              wordBreak: 'break-all',
-              outlineOffset: '0px',
-              width: '100%',
-              border: 'none',
-              outline: 'none',
-              resize: 'none',
-              verticalAlign: 'middle'
-          }}
-      />
-            {/*<div className={`${styles.keypadArea} ${styles.noDrag}`}>*/}
+
+            <textarea
+                style={{  color: 'black',
+                    height: '70px',
+                    fontSize: '24px',
+                    padding: '40px 0 10px 0',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    whiteSpace: 'pre-line',
+                    wordBreak: 'break-all',
+                    outlineOffset: '0px',
+                    width: '100%',
+                    border: 'none',
+                    outline: 'none',
+                    resize: 'none',
+                    verticalAlign: 'middle',}}
+                onChange={onChange}
+                value={viewNumber(number)}
+                maxLength="19"
+            />
+
             <div className={'keypadArea styles'}>
                 <div className={'container'}>
                     {padView}
-                    <div className={'row'}>
+                    <div className={'row key-c'}>
                         <CallButtonBox pageType={'c'} callOnEvent={callOnEvent}
                                        callOffEvent={callOffEvent}></CallButtonBox>
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };
