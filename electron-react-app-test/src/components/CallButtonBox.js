@@ -7,17 +7,33 @@ const CallButtonBox = props => {
     const callOffEvent = props.callOffEvent
 
     if (pageType == 'a') {
-        return <KeyButton keyType={true} keyFunction={callOnEvent} keyStyle={'call-on'} keyIcon={'fa fa-phone-alt'}/>
+        return <KeyButton keyType={true}
+                          keyFunction={callOnEvent}
+                          keyStyle={'call-on'}
+                          keyIcon={'fa fa-phone-alt'}
+        />
 
     } else if (pageType == 'b') {
-        return <KeyButton keyType={true} keyFunction={callOffEvent} keyStyle={'call-off'}
-                          keyIcon={'fa fa-phone rotate-225'}/>
+        return <KeyButton keyType={true}
+                          keyFunction={callOffEvent}
+                          keyStyle={'call-off'}
+                          keyIcon={'fa fa-phone rotate-225'}
+        />
+
     } else if (pageType == 'c') {
         return (
             <>
-                <KeyButton keyType={true} keyFunction={callOnEvent} keyStyle={'call-on'} keyIcon={'fa fa-phone-alt'}/>
-                <KeyButton keyType={true} keyFunction={callOffEvent} keyStyle={'call-off'}
+                <KeyButton keyType={true}
+                           keyText={'거절'}
+                           keyFunction={callOffEvent}
+                           keyStyle={'call-off'}
                            keyIcon={'fa fa-phone rotate-225'}/>
+
+                <KeyButton keyType={true}
+                           keyText={'통화'}
+                           keyFunction={callOnEvent}
+                           keyStyle={'call-on'}
+                           keyIcon={'fa fa-phone-alt'}/>
             </>
         )
     }

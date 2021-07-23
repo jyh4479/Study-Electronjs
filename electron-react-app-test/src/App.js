@@ -1,11 +1,12 @@
 import './App.css';
-import {Home, Connecting} from "./pages";
+import {Home, Connecting, TestPage} from "./pages";
 
 function App() {
     return (
         <div className="App">
-            <Home></Home>
-            <Connecting></Connecting>
+            {/*<Home></Home>*/}
+            {/*<Connecting></Connecting>*/}
+            <TestPage></TestPage>
         </div>
     );
 }
