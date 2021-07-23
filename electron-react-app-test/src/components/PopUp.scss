@@ -1,10 +1,27 @@
 .title{
   width:345px;
-  border: 1px solid black;
+  height:30px;
+  border-radius-topright: 6px;
+  border-radius-topleft: 6px;
+  background-color: #eeeeef;
 }
 
 .box {
   width:345px;
-  height: 165px;
-  border: 1px solid black;
+  height: 200px;
+  //border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.info-box{
+  display: flex;
+}
+
+.img-box{
+  margin: 5% 5% 0 5%;
+}
+.text-box{
+  margin: 5% 5% 0 5%;
 }
