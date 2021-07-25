@@ -62,25 +62,33 @@
   display: inline-table;
 }
 
-.row {
-  .call-on {
-    background: green;
-    border: 0px;
-    color: white;
-  }
+$states: ('on', 'off');
 
-  .call-off {
-    background: red;
-    border: 0px;
-    color: white;
+@mixin makeCallState() {
+  @each $state in $states {
+    .row .call-#{$state} {
+      border: 0px;
+      color: white;
+      @if $state == 'on' {
+        background-color: green;
+      } @else if $state =='off' {
+        background-color: red;
+      } @else {
+        background-color: white;
+      }
+    }
   }
 }
+@include makeCallState
 
-.rotate-225 {
-  transform: rotate(
-                  225deg
-  );
+@mixin makeRotate() {
+  @for $num from 0 through 360 {
+    .rotate-#{$num}{
+      transform: rotate(#{$num}deg);
+    }
+  }
 }
+@include makeRotate
 
 .row .remove {
   color: #0e0b0b;
@@ -103,4 +111,3 @@
     box-shadow: none;
   }
 }
-

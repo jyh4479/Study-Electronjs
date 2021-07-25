@@ -16,7 +16,9 @@ const PopUp = props => {
                     </div>
 
                     <div className={'text-box'}>
-                        <text>HIHI</text>
+                        <div><text>{props.name}</text></div>
+                        <div><text>{props.class}</text></div>
+                        <div><text>{props.state}</text></div>
                     </div>
 
                 </div>
@@ -32,6 +34,10 @@ const PopUp = props => {
     )
 }
 
-PopUp.defaultProps = {}
+PopUp.defaultProps = {
+    name:'name',
+    class:'class',
+    state:'상태',
+}
 
 export default PopUp

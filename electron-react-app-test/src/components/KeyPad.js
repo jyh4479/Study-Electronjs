@@ -22,6 +22,7 @@ const KeyPad = Props => {
         e.preventDefault();
         if (!number) return;
         console.log('Call On!!')
+        console.log(number)
         // voipControl.voipDialUp(number);
     };
     const callOffEvent = e => {
@@ -99,7 +100,7 @@ const KeyPad = Props => {
                 <div className={'container'}>
                     {padView}
                     <div className={'row key-c'}>
-                        <CallButtonBox pageType={'c'} callOnEvent={callOnEvent}
+                        <CallButtonBox pageType={'a'} callOnEvent={callOnEvent}
                                        callOffEvent={callOffEvent}></CallButtonBox>
                     </div>
                 </div>
