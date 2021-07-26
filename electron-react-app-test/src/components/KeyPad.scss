@@ -19,7 +19,6 @@
   border-radius: 10px;
 }
 
-
 .row a {
   -webkit-user-drag: none;
   display: inline-block;
@@ -62,34 +61,6 @@
   display: inline-table;
 }
 
-$states: ('on', 'off');
-
-@mixin makeCallState() {
-  @each $state in $states {
-    .row .call-#{$state} {
-      border: 0px;
-      color: white;
-      @if $state == 'on' {
-        background-color: green;
-      } @else if $state =='off' {
-        background-color: red;
-      } @else {
-        background-color: white;
-      }
-    }
-  }
-}
-@include makeCallState
-
-@mixin makeRotate() {
-  @for $num from 0 through 360 {
-    .rotate-#{$num}{
-      transform: rotate(#{$num}deg);
-    }
-  }
-}
-@include makeRotate
-
 .row .remove {
   color: #0e0b0b;
   //width: 20vw;
@@ -111,3 +82,52 @@ $states: ('on', 'off');
     box-shadow: none;
   }
 }
+
+$buttonStates: ('on', 'off');
+@mixin makeButton() {
+  @each $state in $buttonStates {
+    .row .call-#{$state} {
+      border: 0px;
+      color: white;
+      @if $state == 'on' {
+        background-color: green;
+      } @else if $state =='off' {
+        background-color: red;
+      } @else {
+        background-color: white;
+      }
+    }
+  }
+}
+
+@mixin makeRotate() {
+  @for $num from 0 through 360 {
+    .rotate-#{$num} {
+      transform: rotate(#{$num}deg);
+    }
+  }
+}
+
+$textStates: ('name', 'info');
+@mixin makeText {
+  @each $state in $textStates {
+    .text-#{$state} {
+      font-family: MalgunGothic;
+      font-stretch: normal;
+      font-style: normal;
+      @if $state=='name' {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333333;
+      } @else if $state=='info' {
+        font-size: 13px;
+        font-weight: normal;
+        color: #666666;
+      }
+    }
+  }
+}
+
+@include makeButton
+@include makeRotate
+@include makeText

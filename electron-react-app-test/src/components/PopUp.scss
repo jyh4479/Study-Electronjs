@@ -6,7 +6,7 @@
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   //background-color: #eeeeef;
-  background-color: skyblue;
+  background-color: #eeeeef;
 }
 
 .box {
@@ -31,3 +31,26 @@
   text-align: left;
   margin: 5% 5% 0 5%;
 }
+
+$titles: ('kolon', 'call');
+@mixin makeTitle() {
+  @each $state in $titles {
+    .title-#{$state} {
+      font-family: MalgunGothic;
+      font-stretch: normal;
+      font-style: normal;
+      align-self: center;
+      color: #333333;
+
+      @if $state=='kolon' {
+        font-weight: bold;
+        font-size: 13px;
+      } @else if $state=='call' {
+        font-weight: normal;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@include makeTitle
